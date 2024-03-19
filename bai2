@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+// Hàm đếm và in ra các số chính phương nhỏ hơn n
+void printPerfectSquares(int n) {
+    int count = 0;
+    printf("Cac so chinh phuong nho hon %d la:\n", n);
+    for (int i = 1; i * i < n; i++) {
+        printf("%d ", i * i);
+        count++;
+    }
+    printf("\nTong so chinh phuong: %d\n", count);
+}
+
+int main() {
+    int n;
+    printf("Nhap so nguyen duong n: ");
+    scanf("%d", &n);
+    printPerfectSquares(n);
+    return 0;
+}
