@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-// Hàm đếm và in ra các số chính phương nhỏ hơn n
 void printPerfectSquares(int n) {
     int count = 0;
     printf("Cac so chinh phuong nho hon %d la:\n", n);
